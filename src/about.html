@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About the services and features of the website"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="main-nav-container container">
+          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Expand Menu"
+            id="bars"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/bars.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Collapse Menu"
+            id="xmark"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/xmark.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+
+          <div>
+            <ul id="navbarSupportedContent">
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="about-hero-wrapper">
+          <h2>Movie Watch</h2>
+          <p>
+            Movie Watch best suits people looking for detailed information about
+            what’s really in popular movie lists, daily and weekly trending
+            movie lists, official trailers, ratings, overviews, and many more.
+            Movie Watch provides user-friendly features, sections of movies,
+            clean and aesthetically pleasing graphics, and a lot of other
+            delights.
+          </p>
+          <p>
+            This platform helps users seeking out movie overviews to have some
+            idea of what a movie is going to be like, ratings for a movie they
+            are about to watch, official trailers, popular and trending movies,
+            and descriptions and recommendations. Movie Watch is structured in a
+            manner that helps users explore efficiently.
+          </p>
+          <section>
+            <h3>About in audio</h3>
+            <audio id="audio" controls>
+              <source src="./aud/about.mp3" type="audio/mp3" />
+              <p>Your browser doesn't support HTML audio.</p>
+            </audio>
+
+            <div class="controls">
+              <button class="bwd" id="bwd" aria-label="Backward">
+                <img
+                  src="./icons/bwd.svg"
+                  alt="Backward icon"
+                  width="44"
+                  height="44"
+                />
+              </button>
+              <button
+                class="playpause"
+                id="playpause"
+                aria-label="Toggle Play or Pause"
+              >
+                <img
+                  src="./icons/play-pause.svg"
+                  alt="Play pause icon"
+                  width="44"
+                  height="44"
+                />
+              </button>
+              <button class="stop" id="stop" aria-label="Stop">
+                <img
+                  src="./icons/stop.svg"
+                  alt="Stop icon"
+                  width="44"
+                  height="44"
+                />
+              </button>
+
+              <button class="fwd" id="fwd" aria-label="Forward">
+                <img
+                  src="./icons/fwd.svg"
+                  alt="Forward icon"
+                  width="44"
+                  height="44"
+                />
+              </button>
+              <div
+                class="currentTime"
+                id="currentTime"
+                aria-label="current time"
+              >
+                00:00
+              </div>
+              <div class="progress" id="progress"></div>
+              <div
+                class="totalDuration"
+                id="totalDuration"
+                aria-label="total duration"
+              >
+                00:00
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section>
+        <h2>Features</h2>
+        <ul class="features">
+          <li class="feature">
+            <img
+              src="./icons/user-friendly.svg"
+              alt="Icon representing user friendly"
+              width="50"
+              height="50"
+            />
+            <h3>User Friendly</h3>
+            <p>Provides easy to use and intiutive layouts.</p>
+          </li>
+          <li class="feature">
+            <img
+              src="./icons/broom.png"
+              alt="Icon representing clean"
+              width="50"
+              height="50"
+            />
+            <h3>Clean</h3>
+            <p>Every page contains concise and relevant information.</p>
+          </li>
+          <li class="feature">
+            <img
+              src="./icons/aesthetic.png"
+              alt="Icon representing aesthetic"
+              width="50"
+              height="50"
+            />
+            <h3>Aesthetic</h3>
+            <p>Offers catchy and visually appealing layouts.</p>
+          </li>
+          <li class="feature">
+            <img
+              src="./icons/category.svg"
+              alt="Icon representing catagorized"
+              width="50"
+              height="50"
+            />
+            <h3>Categorized</h3>
+            <p>
+              Each movie is catagorized under popular, trending and upcoming.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-navigation">
+          <div class="footer-title-copyright">
+            <a href="./index.html">Movies Watch</a>
+            <p>Copyright &copy; 2022 Movies Watch</p>
+          </div>
+          <nav>
+            <ul class="footer-navigation-list">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <nav class="socials">
+        <ul class="footer-navigation-list">
+          <li>
+            <a href="https://facebook.com"
+              ><img
+                src="./icons/facebook.svg"
+                alt="facebook"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <img
+                src="./icons/instagram.svg"
+                alt="instagram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://telegram.org"
+              ><img
+                src="./icons/telegram.svg"
+                alt="telegram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <img
+                src="./icons/twitter.svg"
+                alt="twitter"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

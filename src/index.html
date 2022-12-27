@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get list of upcoming, trending and popular movies"
+    />
+    <title>Movie Watch</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container home-nav-container">
+          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Expand Menu"
+            id="bars"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/bars.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Collapse Menu"
+            id="xmark"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/xmark.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+
+          <div>
+            <ul id="navbarSupportedContent" class="nav-list">
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <div class="hero-txt">
+          <h1>Watch Movies</h1>
+          <p>Over millions of movies. Explore all now.</p>
+        </div>
+        <form id="hero-search" class="hero-search" action="./search.html">
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="Search for movie"
+          />
+          <button type="submit" aria-label="Search for movie by title">
+            Search
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="upcoming-movies container" id="upcoming">
+        <h2>Upcoming Movies</h2>
+        <ul class="movies-scroller" id="up-movies">
+          <li>
+            <!--
+            This content will be generated dynamically using javascript by fetching
+          form tmdb api
+          -->
+            <a href="/description.html">
+              Card here
+              <!--   <img src="" alt="">
+                <div class="movie-card-title">
+                  <h2>Movie Title</h2>
+                  <p>VOTE</p>
+                </div>-->
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="movie-table-container">
+        <div class="table-container">
+          <table class="movie-table" id="popular-table">
+            <thead>
+              <th scope="col" colspan="2">Popular</th>
+            </thead>
+          </table>
+          <table class="movie-table" id="tending-table">
+            <thead>
+              <th scope="col" colspan="2">Trending</th>
+            </thead>
+          </table>
+        </div>
+      </section>
+      <section class="trending-movies container">
+        <div class="trending-header">
+          <h2>Trending Movies</h2>
+          <a href="./trending.html" aria-label="explore more on popular movies"
+            >Explore now</a
+          >
+        </div>
+        <ul class="movies-list" id="trending-movies">
+          <li>
+            <!--
+            This content will be generated dynamically using javascript by fetching
+          form tmdb api
+          -->
+            <a href="/description.html">
+              Card here
+              <!--   <img src="" alt="">
+                <div class="movie-card-title">
+                  <h2>Movie Title</h2>
+                  <p>VOTE</p>
+                </div>-->
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="popular-container container">
+        <div class="popular-movies">
+          <div class="popular-header">
+            <h2>Popular Movies</h2>
+            <a href="./popular.html" aria-label="explore more on popular movies"
+              >Explore now</a
+            >
+          </div>
+          <ul class="movies-list" id="popular-movies">
+            <li>
+              <!--
+              This content will be generated dynamically using javascript by fetching
+            form tmdb api
+            -->
+              <a href="/description.html">
+                Card here
+                <!--   <img src="" alt="">
+                  <div class="movie-card-title">
+                    <h2>Movie Title</h2>
+                    <p>VOTE</p>
+                  </div>-->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-navigation">
+          <div class="footer-title-copyright">
+            <a href="./index.html">Movies Watch</a>
+            <p>Copyright &copy; 2022 Movies Watch</p>
+          </div>
+          <nav>
+            <ul class="footer-navigation-list">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <nav class="socials">
+        <ul class="footer-navigation-list">
+          <li>
+            <a href="https://facebook.com"
+              ><img
+                src="./icons/facebook.svg"
+                alt="facebook"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <img
+                src="./icons/instagram.svg"
+                alt="instagram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://telegram.org"
+              ><img
+                src="./icons/telegram.svg"
+                alt="telegram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <img
+                src="./icons/twitter.svg"
+                alt="twitter"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

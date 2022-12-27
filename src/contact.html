@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us through our address and leave any questions and suggestions"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="main-nav-container container">
+          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Expand Menu"
+            id="bars"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/bars.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Collapse Menu"
+            id="xmark"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/xmark.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+
+          <div>
+            <ul id="navbarSupportedContent">
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="connect-container">
+        <h2>Connect With Us</h2>
+        <div class="contact-wrapper">
+          <p>
+            If you have any questions or need help, please fill out the form
+            below. We do our best to respond to the questions.
+          </p>
+          <form>
+            <div class="input-wrapper">
+              <div>
+                <label for="full-name"
+                  >Full Name <span id="name-required">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone-number"
+                  placeholder="+2519********"
+                />
+              </div>
+              <div>
+                <label for="email"
+                  >Email <span id="email-required">*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@site.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="subject"
+                  placeholder="Subject of the mail"
+                />
+              </div>
+              <div>
+                <label for="message"
+                  >Message <span id="message-required">*</span></label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  cols="20"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <section class="reach-us-container">
+        <h2>Reach Us</h2>
+        <address>
+          <h3>Email:</h3>
+          <p>michael12gashaw@gmail.com</p>
+          <h3>Phone:</h3>
+          <p>+251 94 535 7921</p>
+          <h3>Address:</h3>
+          <p>
+            AAU College of Natural Sciences,<br />
+            Queen Elizabeth Street,<br />
+            1415 Arada, Ethiopia
+          </p>
+        </address>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-navigation">
+          <div class="footer-title-copyright">
+            <a href="./index.html">Movies Watch</a>
+            <p>Copyright &copy; 2022 Movies Watch</p>
+          </div>
+          <nav>
+            <ul class="footer-navigation-list">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <nav class="socials">
+        <ul class="footer-navigation-list">
+          <li>
+            <a href="https://facebook.com"
+              ><img
+                src="./icons/facebook.svg"
+                alt="facebook"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <img
+                src="./icons/instagram.svg"
+                alt="instagram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://telegram.org"
+              ><img
+                src="./icons/telegram.svg"
+                alt="telegram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <img
+                src="./icons/twitter.svg"
+                alt="twitter"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

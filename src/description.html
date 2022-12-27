@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detailed infromation about a movie" />
+    <title>Movie Description</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="main-nav-container container">
+          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Expand Menu"
+            id="bars"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/bars.svg"
+              alt="Menu icon"
+              width="44"
+              height="44"
+            />
+          </button>
+          <button
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Collapse Menu"
+            id="xmark"
+            class="menu-btn"
+          >
+            <img
+              src="./icons/xmark.svg"
+              alt="Menu icon"
+              width="44"
+              height="44s"
+            />
+          </button>
+
+          <div>
+            <ul id="navbarSupportedContent">
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="description-section">
+        <!--
+          
+          This content will be generated dynamically using javascript by fetching
+          form tmdb api
+          
+          <div class="description-container">
+          <div class="img-container">
+            <img src="" alt="" />
+          </div>
+          <h2 class="movie-title">Title of the movie</h2>
+          <p class="minute">.45 min</p>
+          <p class="vote">vote: 7.5</p>
+          <p class="genre">Animation, Sci-fi</p>
+          <button id="play-trailer" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              />
+            </svg>
+            Play trailer
+          </button>
+          <div class="overview">
+            <h3>Overview</h3>
+            <p class="overview">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium voluptatem quo doloremque. Eaque facilis repellat
+              voluptatum itaque vel suscipit cumque eius fuga. Eveniet
+              perspiciatis eos pariatur corrupti, ipsum deserunt saepe.
+            </p>
+          </div>
+        </div> -->
+      </section>
+      <section>
+        <h2>Recommendations</h2>
+        <ul class="movies-scroller" id="recommendation-movies">
+          <!--
+            
+            This content will be generated dynamically using javascript by fetching
+          form tmdb api
+            
+            <li>  
+            <a href="/description?id=MOVIE_ID">
+                <img src="" alt="">
+                <div class="movie-card-title">
+                  <h2>Movie Title</h2>
+                  <p>VOTE</p>
+                </div>
+            </a>
+        </li>   -->
+        </ul>
+      </section>
+      <section class="modal" id="modal">
+        <iframe
+          class="iframe"
+          id="iframe"
+          src="https://www.youtube.com/embed/d9MyW72ELq0"
+          allowfullscreen
+          title="Official trailer"
+        ></iframe>
+        <button class="cancel" id="cancel">Cancel</button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-navigation">
+          <div class="footer-title-copyright">
+            <a href="./index.html">Movies Watch</a>
+            <p>Copyright &copy; 2022 Movies Watch</p>
+          </div>
+          <nav>
+            <ul class="footer-navigation-list">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./popular.html">Popular</a>
+              </li>
+              <li>
+                <a href="./trending.html">Trending</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <nav class="socials">
+        <ul class="footer-navigation-list">
+          <li>
+            <a href="https://facebook.com"
+              ><img
+                src="./icons/facebook.svg"
+                alt="facebook"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <img
+                src="./icons/instagram.svg"
+                alt="instagram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://telegram.org"
+              ><img
+                src="./icons/telegram.svg"
+                alt="telegram"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <img
+                src="./icons/twitter.svg"
+                alt="twitter"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
