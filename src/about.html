@@ -13,15 +13,14 @@
   <body>
     <header>
       <nav>
-        <div class="main-nav-container container">
-          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+        <div>
+          <a href="./index.html">Movie Watch</a>
           <button
             type="button"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Expand Menu"
             id="bars"
-            class="menu-btn"
           >
             <img
               src="./icons/bars.svg"
@@ -36,7 +35,6 @@
             aria-expanded="true"
             aria-label="Collapse Menu"
             id="xmark"
-            class="menu-btn"
           >
             <img
               src="./icons/xmark.svg"
@@ -67,7 +65,7 @@
     </header>
     <main>
       <section>
-        <div class="about-hero-wrapper">
+        <div>
           <h2>Movie Watch</h2>
           <p>
             Movie Watch best suits people looking for detailed information about
@@ -86,13 +84,13 @@
           </p>
           <section>
             <h3>About in audio</h3>
-            <audio id="audio" controls>
+            <audio controls>
               <source src="./aud/about.mp3" type="audio/mp3" />
               <p>Your browser doesn't support HTML audio.</p>
             </audio>
 
-            <div class="controls">
-              <button class="bwd" id="bwd" aria-label="Backward">
+            <div>
+              <button aria-label="Backward">
                 <img
                   src="./icons/bwd.svg"
                   alt="Backward icon"
@@ -100,11 +98,7 @@
                   height="44"
                 />
               </button>
-              <button
-                class="playpause"
-                id="playpause"
-                aria-label="Toggle Play or Pause"
-              >
+              <button aria-label="Toggle Play or Pause">
                 <img
                   src="./icons/play-pause.svg"
                   alt="Play pause icon"
@@ -112,7 +106,7 @@
                   height="44"
                 />
               </button>
-              <button class="stop" id="stop" aria-label="Stop">
+              <button aria-label="Stop">
                 <img
                   src="./icons/stop.svg"
                   alt="Stop icon"
@@ -121,7 +115,7 @@
                 />
               </button>
 
-              <button class="fwd" id="fwd" aria-label="Forward">
+              <button aria-label="Forward">
                 <img
                   src="./icons/fwd.svg"
                   alt="Forward icon"
@@ -129,29 +123,17 @@
                   height="44"
                 />
               </button>
-              <div
-                class="currentTime"
-                id="currentTime"
-                aria-label="current time"
-              >
-                00:00
-              </div>
-              <div class="progress" id="progress"></div>
-              <div
-                class="totalDuration"
-                id="totalDuration"
-                aria-label="total duration"
-              >
-                00:00
-              </div>
+              <div aria-label="current time">00:00</div>
+              <input type="range" name="range" min="0" max="100" value="50" />
+              <div aria-label="total duration">00:00</div>
             </div>
           </section>
         </div>
       </section>
       <section>
         <h2>Features</h2>
-        <ul class="features">
-          <li class="feature">
+        <ul>
+          <li>
             <img
               src="./icons/user-friendly.svg"
               alt="Icon representing user friendly"
@@ -161,7 +143,7 @@
             <h3>User Friendly</h3>
             <p>Provides easy to use and intiutive layouts.</p>
           </li>
-          <li class="feature">
+          <li>
             <img
               src="./icons/broom.png"
               alt="Icon representing clean"
@@ -171,7 +153,7 @@
             <h3>Clean</h3>
             <p>Every page contains concise and relevant information.</p>
           </li>
-          <li class="feature">
+          <li>
             <img
               src="./icons/aesthetic.png"
               alt="Icon representing aesthetic"
@@ -181,7 +163,7 @@
             <h3>Aesthetic</h3>
             <p>Offers catchy and visually appealing layouts.</p>
           </li>
-          <li class="feature">
+          <li>
             <img
               src="./icons/category.svg"
               alt="Icon representing catagorized"
@@ -197,14 +179,14 @@
       </section>
     </main>
     <footer>
-      <div class="footer-container container">
-        <div class="footer-navigation">
-          <div class="footer-title-copyright">
+      <div>
+        <div>
+          <div>
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
-            <ul class="footer-navigation-list">
+            <ul>
               <li>
                 <a href="./index.html">Home</a>
               </li>
@@ -225,8 +207,8 @@
         </div>
       </div>
 
-      <nav class="socials">
-        <ul class="footer-navigation-list">
+      <nav>
+        <ul>
           <li>
             <a href="https://facebook.com"
               ><img

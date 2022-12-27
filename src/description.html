@@ -10,15 +10,14 @@
   <body>
     <header>
       <nav>
-        <div class="main-nav-container container">
-          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+        <div>
+          <a href="./index.html">Movie Watch</a>
           <button
             type="button"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Expand Menu"
             id="bars"
-            class="menu-btn"
           >
             <img
               src="./icons/bars.svg"
@@ -33,13 +32,12 @@
             aria-expanded="true"
             aria-label="Collapse Menu"
             id="xmark"
-            class="menu-btn"
           >
             <img
               src="./icons/xmark.svg"
               alt="Menu icon"
               width="44"
-              height="44s"
+              height="44"
             />
           </button>
 
@@ -63,19 +61,19 @@
       </nav>
     </header>
     <main>
-      <section class="description-section">
+      <section>
         <!-- This content will be generated dynamically using javascript by fetching
         form tmdb api -->
 
-        <div class="description-container">
-          <div class="img-container">
-            <img src="" alt="movie image" id="movie-image" />
+        <div>
+          <div>
+            <img src="" alt="movie image" />
           </div>
-          <h2 class="movie-title" id="movie-title">Title of the movie</h2>
-          <p class="minute" id="minute">.45 min</p>
-          <p class="vote" id="vote">vote: 7.5</p>
-          <p class="genre" id="genre">Animation, Sci-fi</p>
-          <button id="play-trailer" type="button">
+          <h2>Title of the movie</h2>
+          <p>.45 min</p>
+          <p>vote: 7.5</p>
+          <p>Animation, Sci-fi</p>
+          <button type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 204 512"
@@ -88,9 +86,9 @@
             </svg>
             Play trailer
           </button>
-          <div class="overview">
+          <div>
             <h3>Overview</h3>
-            <p class="overview" id="overview">
+            <p>
               <!-- This content will be generated dynamically using javascript by fetching
         form tmdb api -->
             </p>
@@ -99,7 +97,7 @@
       </section>
       <section>
         <h2>Recommendations</h2>
-        <ul class="movies-scroller" id="recommendation-movies">
+        <ul>
           <!--
             
             This content will be generated dynamically using javascript by fetching
@@ -116,26 +114,24 @@
         </li>   -->
         </ul>
       </section>
-      <section class="modal" id="modal">
+      <section>
         <iframe
-          class="iframe"
-          id="iframe"
           src="https://www.youtube.com/embed/d9MyW72ELq0"
           allowfullscreen
           title="Official trailer"
         ></iframe>
-        <button class="cancel" id="cancel">Cancel</button>
+        <button>Cancel</button>
       </section>
     </main>
     <footer>
-      <div class="footer-container container">
-        <div class="footer-navigation">
-          <div class="footer-title-copyright">
+      <div>
+        <div>
+          <div>
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
-            <ul class="footer-navigation-list">
+            <ul>
               <li>
                 <a href="./index.html">Home</a>
               </li>
@@ -156,8 +152,8 @@
         </div>
       </div>
 
-      <nav class="socials">
-        <ul class="footer-navigation-list">
+      <nav>
+        <ul>
           <li>
             <a href="https://facebook.com"
               ><img

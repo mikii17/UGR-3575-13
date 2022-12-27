@@ -10,15 +10,14 @@
   <body>
     <header>
       <nav>
-        <div class="main-nav-container container">
-          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+        <div>
+          <a href="./index.html">Movie Watch</a>
           <button
             type="button"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Expand Menu"
             id="bars"
-            class="menu-btn"
           >
             <img
               src="./icons/bars.svg"
@@ -33,7 +32,6 @@
             aria-expanded="true"
             aria-label="Collapse Menu"
             id="xmark"
-            class="menu-btn"
           >
             <img
               src="./icons/xmark.svg"
@@ -42,6 +40,7 @@
               height="44"
             />
           </button>
+
           <div>
             <ul id="navbarSupportedContent">
               <li>
@@ -62,8 +61,8 @@
       </nav>
     </header>
     <main>
-      <section class="search-container">
-        <form id="search-form" class="search">
+      <section>
+        <form>
           <input
             type="text"
             name=""
@@ -75,12 +74,12 @@
           </button>
         </form>
       </section>
-      <section class="container search-container">
-        <header class="search-header">
+      <section>
+        <header>
           <img src="./icons/search.svg" alt="" width="30" height="30" />
           <h1>Showing results for <span id="search-value"></span></h1>
         </header>
-        <ul class="movies-list" id="search-movies">
+        <ul>
           <li>
             <!--
             This content will be generated dynamically using javascript by fetching
@@ -96,24 +95,18 @@
             </a>
           </li>
         </ul>
-        <button
-          class="load-more"
-          id="load-more"
-          aria-label="Load more search lists"
-        >
-          Load More
-        </button>
+        <button aria-label="Load more search lists">Load More</button>
       </section>
     </main>
     <footer>
-      <div class="footer-container container">
-        <div class="footer-navigation">
-          <div class="footer-title-copyright">
+      <div>
+        <div>
+          <div>
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
-            <ul class="footer-navigation-list">
+            <ul>
               <li>
                 <a href="./index.html">Home</a>
               </li>
@@ -134,8 +127,8 @@
         </div>
       </div>
 
-      <nav class="socials">
-        <ul class="footer-navigation-list">
+      <nav>
+        <ul>
           <li>
             <a href="https://facebook.com"
               ><img

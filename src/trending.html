@@ -13,15 +13,14 @@
   <body>
     <header>
       <nav>
-        <div class="main-nav-container container">
-          <a href="./index.html" class="navbar-brand">Movie Watch</a>
+        <div>
+          <a href="./index.html">Movie Watch</a>
           <button
             type="button"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Expand Menu"
             id="bars"
-            class="menu-btn"
           >
             <img
               src="./icons/bars.svg"
@@ -36,7 +35,6 @@
             aria-expanded="true"
             aria-label="Collapse Menu"
             id="xmark"
-            class="menu-btn"
           >
             <img
               src="./icons/xmark.svg"
@@ -45,6 +43,7 @@
               height="44"
             />
           </button>
+
           <div>
             <ul id="navbarSupportedContent">
               <li>
@@ -65,33 +64,19 @@
       </nav>
     </header>
     <main>
-      <section class="trending-container container">
-        <div class="trending-header">
+      <section>
+        <div>
           <h1>Trending Movies</h1>
           <ul>
             <li>
-              <button
-                type="button"
-                id="daily"
-                class="daily"
-                aria-label="daily trending"
-              >
-                Daily
-              </button>
+              <button type="button" aria-label="daily trending">Daily</button>
             </li>
             <li>
-              <button
-                type="button"
-                id="weekly"
-                class="weekly"
-                aria-label="weekly trending"
-              >
-                Weekly
-              </button>
+              <button type="button" aria-label="weekly trending">Weekly</button>
             </li>
           </ul>
         </div>
-        <ul class="movies-list" id="trending-movie">
+        <ul>
           <li>
             <!--
             This content will be generated dynamically using javascript by fetching
@@ -107,24 +92,18 @@
             </a>
           </li>
         </ul>
-        <button
-          class="load-more"
-          id="load-more"
-          aria-label="Load more trending movie lists"
-        >
-          Load More
-        </button>
+        <button aria-label="Load more trending movie lists">Load More</button>
       </section>
     </main>
     <footer>
-      <div class="footer-container container">
-        <div class="footer-navigation">
-          <div class="footer-title-copyright">
+      <div>
+        <div>
+          <div>
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
-            <ul class="footer-navigation-list">
+            <ul>
               <li>
                 <a href="./index.html">Home</a>
               </li>
@@ -145,8 +124,8 @@
         </div>
       </div>
 
-      <nav class="socials">
-        <ul class="footer-navigation-list">
+      <nav>
+        <ul>
           <li>
             <a href="https://facebook.com"
               ><img
