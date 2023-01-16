@@ -33,7 +33,7 @@ function init() {
     }
   });
 
-  let uri = decodeURI(window.location.href);
+  let uri = decodeURI(window.location.href.replace(/\+/g, " "));
 
   let query = uri
     .slice(uri.indexOf("?search=") + 8)
