@@ -35,9 +35,12 @@ function init() {
 
   let uri = decodeURI(window.location.href);
 
-  let query = uri.slice(uri.indexOf("?search=") + 8);
+  let query = uri
+    .slice(uri.indexOf("?search=") + 8)
+    .toLowerCase()
+    .trim();
 
-  searchValue.textContent = query.toLowerCase().trim();
+  searchValue.textContent = query;
   data = popular.filter(
     (movie) =>
       movie?.title?.toLowerCase().includes(query) ||
