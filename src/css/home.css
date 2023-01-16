@@ -15,6 +15,7 @@
 .hero-container {
   padding: 7em 2em;
 }
+
 .hero-container h1 {
   color: var(--yellow-color);
 }
@@ -99,13 +100,11 @@ td.td-rating > span {
   align-items: center;
 }
 .movie-list-heading a {
-  /* vertical-align: center; */
   color: var(--yellow-color);
   transition: all 150ms ease;
 }
 .movie-list-heading a:focus,
 .movie-list-heading a:hover {
-  /* vertical-align: center; */
   color: var(--white-color);
   text-decoration: underline;
 }
@@ -119,5 +118,8 @@ td.td-rating > span {
 
   .movie-scroller li {
     flex: 1 0 40%;
+  }
+  .hero-container {
+    padding: 7em 0.5em;
   }
 }
