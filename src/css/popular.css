@@ -1,11 +1,11 @@
-.genre-container {
+.genre-section__list {
   display: flex;
   gap: 5%;
   overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 0.5rem;
 }
-.genre-container button {
+.genre-section__list button {
   padding: 1em 1.75em;
 }
 .movie-container button {

@@ -2,48 +2,48 @@ body > header {
   background-color: var(--dark-color);
   /* outline: 3px solid var(--yellow-color); */
 }
-.header__nav {
+.main-header__nav {
   max-width: min(1024px, 90%);
   margin-inline: auto;
   padding: 0.75em 0.7em;
 }
-.header__nav-home {
+.main-header__nav--home {
   background-color: var(--transparent-light-dark-color);
   border-radius: 0 0 20px 20px;
   outline: 3px solid var(--yellow-color);
 }
 
-.header__nav > div > a {
+.main-header__nav > div > a {
   font-size: var(--font-l);
   font-weight: var(--font-bold);
 }
 
-.header__nav > div > a > span {
+.main-header__nav > div > a > span {
   color: var(--yellow-color);
 }
-.header__nav > div > div {
+.main-header__nav > div > div {
   display: none;
 }
-.header__nav > div {
+.main-header__nav > div {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav__list {
+.main-header__list {
   width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__list a {
+.main-header__list a {
   font-size: var(--font-s);
   font-weight: var(--font-med);
   position: relative;
 }
 
-.nav__list a::after {
+.main-header__list a::after {
   content: "";
   position: absolute;
   height: 30px;
@@ -55,11 +55,11 @@ body > header {
   transition: all 0.3s;
 }
 
-.nav__list a:hover {
+.main-header__list a:hover {
   color: var(--yellow-color);
 }
 
-.nav__list a:hover::after {
+.main-header__list a:hover::after {
   width: 100%;
 }
 .menu-btn-container {
@@ -72,7 +72,7 @@ body > header {
     cursor: pointer;
   }
 
-  .header__nav > div > div {
+  .main-header__nav > div > div {
     display: flex;
   }
 
@@ -83,7 +83,7 @@ body > header {
     background-repeat: no-repeat;
     border: 0;
   }
-  .nav__list[data-visible="true"] {
+  .main-header__list[data-visible="true"] {
     transform: translateY(0);
   }
 
@@ -96,7 +96,7 @@ body > header {
     border: 0;
   }
 
-  .nav__list {
+  .main-header__list {
     position: absolute;
     flex-direction: column;
     justify-content: center;
@@ -116,13 +116,13 @@ body > header {
     z-index: 1;
   }
 
-  .nav__list > li {
+  .main-header__list > li {
     width: 100%;
 
     /* font-size: 1.25rem; */
   }
 
-  .nav__list > li > a {
+  .main-header__list > li > a {
     font-size: var(--font-m);
     text-align: left;
   }

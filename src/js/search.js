@@ -11,7 +11,7 @@ function init() {
   loadMore.addEventListener("click", loadMoreHandler);
   searchForm.addEventListener("submit", (ev) => {
     ev.preventDefault();
-    query = searchInput.value;
+    query = searchInput.value.toLowerCase();
 
     data = popular.filter(
       (movie) =>

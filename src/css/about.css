@@ -1,4 +1,4 @@
-.about-wrapper {
+.about {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.75) 0%,
@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center center;
 }
-.about__container {
+.about__detail {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -26,7 +26,7 @@
   text-align: justify;
 }
 
-.about__container section h3 {
+.about__detail section h3 {
   font-size: var(--font-m);
   font-weight: var(--font-bold);
 }
@@ -89,7 +89,7 @@ video {
   font-weight: var(--font-bold);
 }
 
-.footer-nav {
+.title-copy-container {
   margin-top: 0;
 }
 

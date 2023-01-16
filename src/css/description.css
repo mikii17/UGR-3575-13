@@ -57,7 +57,7 @@
   font-weight: var(--font-mid);
   margin-bottom: 0.75em;
 }
-.description-container .description-overview-container {
+.description-container .description-section__overview {
   grid-column: 2 / span 2;
 }
 
@@ -86,7 +86,7 @@
   .description-container p#genre {
     grid-column: 1 / span 3;
   }
-  .description-container .description-overview-container {
+  .description-container .description-section__overview {
     grid-column: 1 / span 3;
   }
 }
