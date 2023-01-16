@@ -70,3 +70,9 @@ main {
 .movie-container__title ul button:hover {
   background: transparent;
 }
+
+@media screen and (max-width: 36em) {
+  .movie-container__title h1 {
+    font-size: var(--font-m);
+  }
+}
