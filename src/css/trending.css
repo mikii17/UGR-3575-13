@@ -28,6 +28,7 @@ main {
   align-self: flex-start;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .movie-container__title ul {
   flex: 0 0 30%;
