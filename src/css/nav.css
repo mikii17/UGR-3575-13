@@ -6,7 +6,6 @@ body > header {
   max-width: min(1024px, 90%);
   margin-inline: auto;
   padding: 0.75em 0.7em;
-  backdrop-filter: blur(1em);
 }
 .header__nav-home {
   background-color: var(--transparent-light-dark-color);

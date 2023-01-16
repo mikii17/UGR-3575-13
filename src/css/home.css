@@ -1,3 +1,6 @@
+.header__nav {
+  backdrop-filter: blur(1em);
+}
 .home-header {
   background-image: linear-gradient(
       to bottom,
