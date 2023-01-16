@@ -45,7 +45,7 @@ body > header {
 }
 
 .nav__list a::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 30px;
   background-color: var(--yellow-color);
@@ -78,19 +78,19 @@ body > header {
   }
 
   button#bars {
-    background: url('../images/bars.svg');
+    background: url("../images/bars.svg");
     width: 0.75rem;
     height: 0.75rem;
     background-repeat: no-repeat;
     border: 0;
   }
-  .nav__list[data-visible='true'] {
+  .nav__list[data-visible="true"] {
     transform: translateY(0);
   }
 
   button#xmark {
     display: none;
-    background: url('../images/xmark.svg');
+    background: url("../images/xmark.svg");
     width: 0.75rem;
     height: 0.75rem;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body > header {
     top: 14vh;
     gap: 2rem;
     background-color: var(--transparent-dark-color);
-    backdrop-filter: blur(1em);
+    /* backdrop-filter: blur(1em); */
     transform: translateY(-200%);
     transition: transform 0.3s;
     z-index: 1;
