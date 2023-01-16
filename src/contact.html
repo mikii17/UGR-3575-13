@@ -9,13 +9,19 @@
       content="Contact us through our address and leave any questions and suggestions"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/contact.js"></script>
+    <script src="./js/navbar.js"></script>
     <title>Contact</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header__nav">
         <div>
-          <a href="./index.html">Movie Watch</a>
+          <a href="./index.html"><span>Movie</span> Watch</a>
           <div>
             <button
               type="button"
@@ -24,12 +30,12 @@
               aria-label="Expand Menu"
               id="bars"
             >
-              <img
+              <!-- <img
                 src="./images/bars.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
             <button
               type="button"
@@ -38,15 +44,15 @@
               aria-label="Collapse Menu"
               id="xmark"
             >
-              <img
+              <!-- <img
                 src="./images/xmark.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
           </div>
-          <ul id="navbarSupportedContent">
+          <ul id="navbarSupportedContent" class="nav__list">
             <li>
               <a href="./popular.html">Popular</a>
             </li>
@@ -64,160 +70,169 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h2>Connect With Us</h2>
-        <div>
-          <p>
-            If you have any questions or need help, please fill out the form
-            below. We do our best to respond to the questions.
-          </p>
-          <form>
-            <div>
-              <div>
-                <label for="full-name"
-                  >Full Name <span id="name-required">*</span></label
-                >
-                <input
-                  type="text"
-                  name="name"
-                  id="full-name"
-                  placeholder="John Doe"
-                  required
-                />
+      <div class="contact-container-wrapper">
+        <section class="contact-container container pad">
+          <h2>Connect With Us</h2>
+          <div class="contact-detail-container">
+            <p>
+              If you have any questions or need help, please fill out the form
+              below. We do our best to respond to the questions.
+            </p>
+            <p class="contact__message none" id="contact-message">
+              Your request is sent successfully!
+            </p>
+            <form id="contact-form" novalidate>
+              <div class="form-container">
+                <div>
+                  <label for="full-name">Full Name </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="John Doe"
+                    required
+                  />
+                  <p class="none error-display" id="fullnameRequired">
+                    Full Name is required
+                  </p>
+                  <p class="none error-display" id="fullnameInvalid">
+                    Invalid name format
+                  </p>
+                </div>
+                <div>
+                  <label for="phone-number">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone-number"
+                    placeholder="+251 9* *** ****"
+                  />
+                  <p class="none error-display" id="phoneInvalid">
+                    Use Format: +251 9* *** ****
+                  </p>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="johndoe@site.com"
+                    required
+                  />
+                  <p class="none error-display" id="emailRequired">
+                    Email is required
+                  </p>
+                  <p class="none error-display" id="emailInvaild">
+                    Use Format: johndoe@domain.com
+                  </p>
+                </div>
+                <div>
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="subject"
+                    placeholder="Subject of the mail"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    cols="15"
+                    rows="10"
+                    required
+                  ></textarea>
+                  <p class="none error-display" id="mesRequired">
+                    Message can't be empty
+                  </p>
+                  <p class="none error-display" id="mesInvalid">
+                    Message should be lessthan 200 characters.
+                  </p>
+                </div>
               </div>
-              <div>
-                <label for="phone-number">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone-number"
-                  placeholder="+2519********"
-                />
-              </div>
-              <div>
-                <label for="email"
-                  >Email <span id="email-required">*</span></label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="johndoe@site.com"
-                  required
-                />
-              </div>
-              <div>
-                <label for="subject">Subject</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="subject"
-                  placeholder="Subject of the mail"
-                />
-              </div>
-              <div>
-                <label for="message"
-                  >Message <span id="message-required">*</span></label
-                >
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Message"
-                  cols="20"
-                  rows="10"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </section>
-      <section>
-        <h2>Reach Us</h2>
-        <address>
-          <h3>Email:</h3>
-          <p>michael12gashaw@gmail.com</p>
-          <h3>Phone:</h3>
-          <p>+251 94 535 7921</p>
-          <h3>Address:</h3>
-          <p>
-            AAU College of Natural Sciences,<br />
-            Queen Elizabeth Street,<br />
-            1415 Arada, Ethiopia
-          </p>
-        </address>
-      </section>
+              <button type="submit" id="submit">Send</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="reach-us-wrapper">
+        <section class="reach-us-container container">
+          <h2>Reach Us</h2>
+          <address>
+            <h3>Email:</h3>
+            <p>michael12gashaw@gmail.com</p>
+            <h3>Phone:</h3>
+            <p>+251 94 535 7921</p>
+            <h3>Address:</h3>
+            <p>
+              AAU College of Natural Sciences,<br />
+              Queen Elizabeth Street,<br />
+              1415 Arada, Ethiopia
+            </p>
+          </address>
+        </section>
+      </div>
     </main>
     <footer>
       <div>
-        <div>
-          <div>
+        <div class="footer-nav container">
+          <div class="footer-title-copyright">
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
             <ul>
-              <li>
-                <a href="./index.html">Home</a>
-              </li>
-              <li>
-                <a href="./popular.html">Popular</a>
-              </li>
-              <li>
-                <a href="./trending.html">Trending</a>
-              </li>
-              <li>
-                <a href="./about.html">About</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contact</a>
-              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./popular.html">Popular</a></li>
+              <li><a href="./trending.html">Trending</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
-      </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="https://facebook.com"
-              ><img
-                src="./images/facebook.svg"
-                alt="facebook"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <img
-                src="./images/instagram.svg"
-                alt="instagram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://telegram.org"
-              ><img
-                src="./images/telegram.svg"
-                alt="telegram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <img
-                src="./images/twitter.svg"
-                alt="twitter"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav-socials">
+          <ul>
+            <li>
+              <a href="https://facebook.com"
+                ><img
+                  src="./images/facebook.svg"
+                  alt="facebook"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://telegram.org"
+                ><img
+                  src="./images/telegram.svg"
+                  alt="telegram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <img src="./images/twitter.svg" alt="twitter" width="50"
+                height="50" title="twitter"" /></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

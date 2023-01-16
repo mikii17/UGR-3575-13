@@ -1,0 +1,25 @@
+.genre-container {
+  display: flex;
+  gap: 5%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 0.5rem;
+}
+.genre-container button {
+  padding: 1em 1.75em;
+}
+.movie-container button {
+  padding: 1em 2.75em;
+}
+.movie-container h1 {
+  font-weight: var(--font-med);
+  font-size: var(--font-l);
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}

@@ -9,13 +9,24 @@
       content="Get list of upcoming, trending and popular movies"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/movie-list.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/popularData.js"></script>
+    <script src="./js/trendingData.js"></script>
+    <script src="./js/upcomingData.js"></script>
+    <script src="./js/movie-add.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/navbar.js"></script>
     <title>Movie Watch</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header home-header">
+      <nav class="header__nav header__nav-home">
         <div>
-          <a href="./index.html">Movie Watch</a>
+          <a href="./index.html"><span>Movie</span> Watch</a>
           <div>
             <button
               type="button"
@@ -24,12 +35,12 @@
               aria-label="Expand Menu"
               id="bars"
             >
-              <img
+              <!-- <img
                 src="./images/bars.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
             <button
               type="button"
@@ -38,15 +49,15 @@
               aria-label="Collapse Menu"
               id="xmark"
             >
-              <img
+              <!-- <img
                 src="./images/xmark.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
           </div>
-          <ul id="navbarSupportedContent">
+          <ul id="navbarSupportedContent" class="nav__list">
             <li>
               <a href="./popular.html">Popular</a>
             </li>
@@ -62,15 +73,15 @@
           </ul>
         </div>
       </nav>
-      <div>
+      <div class="hero-container container">
         <div>
           <h1>Watch Movies</h1>
           <p>Over millions of movies. Explore all now.</p>
         </div>
-        <form action="./search.html">
+        <form action="./search.html" method="get">
           <input
             type="text"
-            name=""
+            name="search"
             id="search"
             placeholder="Search for movie"
           />
@@ -81,159 +92,148 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>Upcoming Movies</h2>
-        <ul>
-          <li>
-            <!--
-            This content will be generated dynamically using javascript by fetching
-          form tmdb api
-          -->
+      <section class="container">
+        <h2 class="pad">Upcoming Movies</h2>
+        <ul id="upcoming-movies" class="movie-scroller">
+          <!--<li>
+           
+            This content will be generated dynamically using javascript 
+          
             <a href="/description.html">
-              Card here
-              <!--   <img src="" alt="">
+             ] <img src="" alt="">
                 <div class="movie-card-title">
                   <h2>Movie Title</h2>
                   <p>VOTE</p>
-                </div>-->
+                </div>
             </a>
-          </li>
+          </li>-->
         </ul>
       </section>
-      <section>
-        <div>
-          <table>
+      <section class="home-table">
+        <div class="home-table__container pad">
+          <table id="popular-table">
             <thead>
-              <th scope="col" colspan="2">Popular</th>
+              <tr>
+                <th scope="col" colspan="3">Popular Movies</th>
+              </tr>
             </thead>
           </table>
-          <table>
+          <table id="trending-table">
             <thead>
-              <th scope="col" colspan="2">Trending</th>
+              <tr>
+                <th scope="col" colspan="3">Trending Movies</th>
+              </tr>
             </thead>
           </table>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="container">
+        <div class="movie-list-heading pad">
           <h2>Trending Movies</h2>
           <a href="./trending.html" aria-label="explore more on popular movies"
             >Explore now</a
           >
         </div>
-        <ul>
-          <li>
-            <!--
-            This content will be generated dynamically using javascript by fetching
-          form tmdb api
-          -->
+        <ul id="trending-movies" class="movie-list">
+          <!--<li>
+           
+            This content will be generated dynamically using javascript 
+          
             <a href="/description.html">
-              Card here
-              <!--   <img src="" alt="">
+             ] <img src="" alt="">
                 <div class="movie-card-title">
                   <h2>Movie Title</h2>
                   <p>VOTE</p>
-                </div>-->
+                </div>
             </a>
-          </li>
+          </li>-->
         </ul>
       </section>
-      <section>
+      <section class="container">
         <div>
-          <div>
+          <div class="movie-list-heading pad">
             <h2>Popular Movies</h2>
             <a href="./popular.html" aria-label="explore more on popular movies"
               >Explore now</a
             >
           </div>
-          <ul>
-            <li>
-              <!--
-              This content will be generated dynamically using javascript by fetching
-            form tmdb api
-            -->
-              <a href="/description.html">
-                Card here
-                <!--   <img src="" alt="">
-                  <div class="movie-card-title">
-                    <h2>Movie Title</h2>
-                    <p>VOTE</p>
-                  </div>-->
-              </a>
-            </li>
+          <ul id="popular-movies" class="movie-list">
+            <!--<li>
+           
+            This content will be generated dynamically using javascript 
+          
+            <a href="/description.html">
+             ] <img src="" alt="">
+                <div class="movie-card-title">
+                  <h2>Movie Title</h2>
+                  <p>VOTE</p>
+                </div>
+            </a>
+          </li>-->
           </ul>
         </div>
       </section>
     </main>
     <footer>
       <div>
-        <div>
-          <div>
+        <div class="footer-nav container">
+          <div class="footer-title-copyright">
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
             <ul>
-              <li>
-                <a href="./index.html">Home</a>
-              </li>
-              <li>
-                <a href="./popular.html">Popular</a>
-              </li>
-              <li>
-                <a href="./trending.html">Trending</a>
-              </li>
-              <li>
-                <a href="./about.html">About</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contact</a>
-              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./popular.html">Popular</a></li>
+              <li><a href="./trending.html">Trending</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
-      </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="https://facebook.com"
-              ><img
-                src="./images/facebook.svg"
-                alt="facebook"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <img
-                src="./images/instagram.svg"
-                alt="instagram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://telegram.org"
-              ><img
-                src="./images/telegram.svg"
-                alt="telegram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <img
-                src="./images/twitter.svg"
-                alt="twitter"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav-socials">
+          <ul>
+            <li>
+              <a href="https://facebook.com"
+                ><img
+                  src="./images/facebook.svg"
+                  alt="facebook"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://telegram.org"
+                ><img
+                  src="./images/telegram.svg"
+                  alt="telegram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <img
+                  src="./images/twitter.svg"
+                  alt="twitter"
+                  width="50"
+                  height="50"
+                  title="twitter"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

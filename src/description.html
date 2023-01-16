@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Detailed infromation about a movie" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/description.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/popularData.js"></script>
+    <script src="./js/trendingData.js"></script>
+    <script src="./js/upcomingData.js"></script>
+    <script src="./js/movie-add.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/description.js"></script>
     <title>Movie Description</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header__nav">
         <div>
-          <a href="./index.html">Movie Watch</a>
+          <a href="./index.html"><span>Movie</span> Watch</a>
           <div>
             <button
               type="button"
@@ -21,12 +31,12 @@
               aria-label="Expand Menu"
               id="bars"
             >
-              <img
+              <!-- <img
                 src="./images/bars.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
             <button
               type="button"
@@ -35,15 +45,15 @@
               aria-label="Collapse Menu"
               id="xmark"
             >
-              <img
+              <!-- <img
                 src="./images/xmark.svg"
                 alt="Menu icon"
                 width="44"
                 height="44"
-              />
+              /> -->
             </button>
           </div>
-          <ul id="navbarSupportedContent">
+          <ul id="navbarSupportedContent" class="nav__list">
             <li>
               <a href="./popular.html">Popular</a>
             </li>
@@ -61,141 +71,97 @@
       </nav>
     </header>
     <main>
-      <section>
-        <!-- This content will be generated dynamically using javascript by fetching
-        form tmdb api -->
-
-        <div>
-          <div>
-            <img src="" alt="movie image" />
+      <section id="description-section" class="description-section">
+        <div class="description-container container">
+          <div class="description-image-container">
+            <img src="" alt="movie image" id="profile-image" />
           </div>
-          <h2>Title of the movie</h2>
-          <p>.45 min</p>
-          <p>vote: 7.5</p>
-          <p>Animation, Sci-fi</p>
-          <button type="button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 204 512"
-              width="44"
-              height="44"
-            >
-              <path
-                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
-              />
-            </svg>
-            Play trailer
-          </button>
-          <div>
+          <h2 id="movie-title"></h2>
+          <p>.135 min</p>
+          <p>vote: <span id="vote"></span></p>
+          <p id="genre"></p>
+          <div class="description-overview-container">
             <h3>Overview</h3>
-            <p>
-              <!-- This content will be generated dynamically using javascript by fetching
-        form tmdb api -->
+            <p id="overview">
+              <!-- This content will be generated dynamically using javascript by fetching-->
             </p>
           </div>
         </div>
       </section>
-      <section>
-        <h2>Recommendations</h2>
-        <ul>
-          <!--
-            
-            This content will be generated dynamically using javascript by fetching
-          form tmdb api
-            
-            <li>  
-            <a href="/description?id=MOVIE_ID">
-                <img src="" alt="">
+      <section class="container">
+        <h2 class="pad">Recommendations</h2>
+        <ul id="recommendations" class="movie-scroller">
+          <!--<li>
+           
+            This content will be generated dynamically using javascript 
+          
+            <a href="/description.html">
+             ] <img src="" alt="">
                 <div class="movie-card-title">
                   <h2>Movie Title</h2>
                   <p>VOTE</p>
                 </div>
             </a>
-        </li>   -->
+          </li>-->
         </ul>
-      </section>
-      <section>
-        <!-- 
-          
-          This will pop up as a modal to display trailer after fetching the corresponding links
-          
-          <iframe
-          src="https://www.youtube.com/embed/d9MyW72ELq0"
-          allowfullscreen
-          title="Official trailer"
-        ></iframe>
-        <button>Cancel</button> -->
       </section>
     </main>
     <footer>
       <div>
-        <div>
-          <div>
+        <div class="footer-nav container">
+          <div class="footer-title-copyright">
             <a href="./index.html">Movies Watch</a>
             <p>Copyright &copy; 2022 Movies Watch</p>
           </div>
           <nav>
             <ul>
-              <li>
-                <a href="./index.html">Home</a>
-              </li>
-              <li>
-                <a href="./popular.html">Popular</a>
-              </li>
-              <li>
-                <a href="./trending.html">Trending</a>
-              </li>
-              <li>
-                <a href="./about.html">About</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contact</a>
-              </li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./popular.html">Popular</a></li>
+              <li><a href="./trending.html">Trending</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
-      </div>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="https://facebook.com"
-              ><img
-                src="./images/facebook.svg"
-                alt="facebook"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <img
-                src="./images/instagram.svg"
-                alt="instagram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://telegram.org"
-              ><img
-                src="./images/telegram.svg"
-                alt="telegram"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <img
-                src="./images/twitter.svg"
-                alt="twitter"
-                width="50"
-                height="50"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav-socials">
+          <ul>
+            <li>
+              <a href="https://facebook.com"
+                ><img
+                  src="./images/facebook.svg"
+                  alt="facebook"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://telegram.org"
+                ><img
+                  src="./images/telegram.svg"
+                  alt="telegram"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <img src="./images/twitter.svg" alt="twitter" width="50"
+                height="50" title="twitter"" /></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
