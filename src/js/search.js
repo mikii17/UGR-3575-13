@@ -11,7 +11,7 @@ function init() {
   loadMore.addEventListener("click", loadMoreHandler);
   searchForm.addEventListener("submit", (ev) => {
     ev.preventDefault();
-    query = searchInput.value.toLowerCase();
+    query = searchInput.value.toLowerCase().trim();
 
     data = popular.filter(
       (movie) =>
@@ -37,7 +37,7 @@ function init() {
 
   let query = uri.slice(uri.indexOf("?search=") + 8);
 
-  searchValue.textContent = query;
+  searchValue.textContent = query.toLowerCase().trim();
   data = popular.filter(
     (movie) =>
       movie?.title?.toLowerCase().includes(query) ||
