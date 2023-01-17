@@ -9,7 +9,7 @@
 }
 
 .form-container form input {
-  width: max(50%, 200px);
+  width: max(50%, 180px);
 }
 .form-container form button {
   padding: 0.8em 2.75em;
@@ -37,4 +37,9 @@
 
 .movie-container button {
   padding: 1em 2.75em;
+}
+@media screen and (max-width: 36em) {
+  .form-container form button {
+    padding: 0.8em 2em;
+  }
 }
