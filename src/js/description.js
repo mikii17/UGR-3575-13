@@ -23,6 +23,10 @@ const fillDescription = (data) => {
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0.9) 100%
   ), url(${data.backdrop_path})`;
+  descSection.style.backgroundRepeat = "no-repeat";
+  descSection.style.backgroundSize = "cover";
+  descSection.style.backgroundPosition = "center center";
+
   profileImage.src = data.poster_path;
   profileImage.setAttribute("width", "200");
   profileImage.setAttribute("height", "200");
@@ -35,7 +39,7 @@ const fillDescription = (data) => {
 
   let archive = getDataByGenre(data.genre_ids, title, popular);
   archive.length > 10 ? (archive = archive.slice(0, 10)) : null;
-  createList(document.getElementById("recommendations"), archive);
+  createList(document.getElementById("recommendations"), archive, false);
 };
 
 const getDataByName = (name, archive) => {

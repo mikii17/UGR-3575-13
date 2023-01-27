@@ -22,7 +22,7 @@ function init() {
 
   Array.prototype.forEach.call(filterCatagories, (element) => {
     element.addEventListener("click", (ev) => {
-      const genre = ev.target.textContent;
+      const genre = ev.target.textContent.trim();
 
       data = popular.filter((movie) => movie.genre_ids.includes(genre));
 

@@ -6,7 +6,6 @@ function init() {
   const loadMore = document.getElementById("load-more");
   const dayFilter = document.getElementById("day-filter");
   const weekFilter = document.getElementById("week-filter");
-  const toggler = document.getElementById("toggler");
 
   function loadMoreHandler(ev) {
     if (data.length <= count + 8) {
@@ -23,9 +22,8 @@ function init() {
 
   loadMore.addEventListener("click", loadMoreHandler);
   dayFilter.addEventListener("click", (ev) => {
-    toggler.style.left = 0
-    toggler.style.right = "unset"
-
+    weekFilter.classList.remove("selected");
+    dayFilter.classList.add("selected");
     data = day;
     if (data.length <= 8) {
       loadMore.removeEventListener("click", loadMoreHandler);
@@ -41,9 +39,8 @@ function init() {
     createList(trendingMovies, data.slice(0, count));
   });
   weekFilter.addEventListener("click", (ev) => {
-    toggler.style.left = "unset"
-    toggler.style.right = 0
-
+    weekFilter.classList.add("selected");
+    dayFilter.classList.remove("selected");
     data = week;
     if (data.length <= 8) {
       loadMore.removeEventListener("click", loadMoreHandler);
